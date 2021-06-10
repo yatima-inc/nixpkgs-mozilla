@@ -293,7 +293,7 @@ let
             # And get a fully working Rust compiler, with the stdenv linker.
             propagatedBuildInputs = [ stdenv.cc ];
 
-            meta.platforms = stdenv.lib.platforms.all;
+            meta.platforms = lib.platforms.all;
           }
       ) { extensions = []; targets = []; targetExtensions = []; }
     );
